@@ -22,7 +22,7 @@ export default class ProjectsIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories
+            Projects
           </h1>
         </div>
         <section className="section">

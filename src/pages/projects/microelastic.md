@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: project-page
 title: MicroElastic
 date: 2021-08-13T17:17:09.535Z
 description: A medical application for measuring skin elasticity

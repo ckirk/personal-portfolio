@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: project-page
 title: RAVN Camera
 date: 2021-08-13T17:53:08.745Z
 description: Tactical Camera

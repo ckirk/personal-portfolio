@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: project-page
 title: The Vision Lab
 date: 2021-08-13T17:38:22.462Z
 description: An app for crowdsourcing ideas from employees

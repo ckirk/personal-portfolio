@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: project-page
 title: RAVN AR Controller
 date: 2021-08-13T17:31:03.222Z
 description: A device for controlling an AR interface on the battlefield

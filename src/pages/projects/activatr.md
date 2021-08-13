@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: project-page
 title: Activatr
 date: 2021-08-13T17:34:38.954Z
 description: A social media micro-influencer management platform

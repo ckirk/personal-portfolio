@@ -12,22 +12,26 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     right: 0
   }
 
+  const imgStyle = {
+    objectPosition: 'top left'
+  }
+
   const objectPosition = 'left top'
 
   const { alt = '', childImageSharp, image } = imageInfo
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} objectPosition={objectPosition} alt={alt} />
+      <Img style={imageStyle} fluid={image.childImageSharp.fluid} imgStyle={imgStyle} alt={alt} />
     )
   }
 
   if (!!childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} objectPosition={objectPosition} alt={alt} />
+    return <Img style={imageStyle} fluid={childImageSharp.fluid} imgStyle={imgStyle} alt={alt} />
   }
 
   if (!!image && typeof image === 'string')
-    return <img style={imageStyle} src={image} objectPosition={objectPosition} alt={alt} />
+    return <img style={imageStyle} src={image} imgStyle={imgStyle} alt={alt} />
 
   return null
 }

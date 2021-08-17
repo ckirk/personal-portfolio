@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import ProjectBkgImg from './ProjectBkgImg'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import Img from 'gatsby-image'
+import { motion } from "framer-motion"
 
 class ProjectsRoll extends React.Component {
   render() {
@@ -11,26 +12,37 @@ class ProjectsRoll extends React.Component {
 
     const Post = (props) => {
       const { post } = props
-      console.log(props)
+
+      const slideUp = {
+        hover: { y: -110 }
+      };
+
+      const pushIn = {
+        hover: {
+          scale: 1.03,
+          transition: { duration: 2 }
+        }
+      };
 
       return (
         <div className="is-parent column is-6">
           <Link to={post.fields.slug}>
-            <div className={`is-child project-tile`}>
-              {/* <header className='header'>
-                <h2>{post.frontmatter.title}</h2>
-                <p>{post.frontmatter.description}</p>
-              </header> */}
+            <motion.div className={`is-child project-tile`} whileHover='hover' >
 
-              <div className="fill-div bkg-img-container">
+              <motion.div className="fill-div bkg-img-container" variants={pushIn}>
                 <ProjectBkgImg
                   imageInfo={{
                     image: post.frontmatter.featuredimage,
                     alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                   }}
                 />
-              </div>
-            </div>
+              </motion.div>
+
+              <motion.div className="info-bar" variants={slideUp}>
+                <h2>{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.description}</p>
+              </motion.div>
+            </motion.div>
           </Link>
         </div>
       )

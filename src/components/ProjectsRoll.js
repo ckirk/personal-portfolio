@@ -23,6 +23,7 @@ class ProjectsRoll extends React.Component {
           transition: { duration: 2 }
         }
       };
+      
 
       return (
         <div className="is-parent column is-6">

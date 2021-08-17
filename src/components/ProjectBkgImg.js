@@ -16,10 +16,9 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     objectPosition: 'top left'
   }
 
-  const objectPosition = 'left top'
+  const { alt = '', childImageSharp, image, extension, publicURL } = imageInfo
 
-  const { alt = '', childImageSharp, image } = imageInfo
-
+  console.log(publicURL)
   if (!!image && !!image.childImageSharp) {
     return (
       <Img style={imageStyle} fluid={image.childImageSharp.fluid} imgStyle={imgStyle} alt={alt} />
@@ -29,6 +28,11 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   if (!!childImageSharp) {
     return <Img style={imageStyle} fluid={childImageSharp.fluid} imgStyle={imgStyle} alt={alt} />
   }
+
+  // gif support
+  // if (extension === 'gif') {
+  //   return <img style={imageStyle} src={publicURL} alt={alt} />
+  // }
 
   if (!!image && typeof image === 'string')
     return <img style={imageStyle} src={image} imgStyle={imgStyle} alt={alt} />

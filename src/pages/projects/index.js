@@ -7,7 +7,8 @@ export default class ProjectsIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
+        {/* HEADER */}
+        {/* <div
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url('/img/blog-index.jpg')`,
@@ -24,7 +25,7 @@ export default class ProjectsIndexPage extends React.Component {
           >
             Projects
           </h1>
-        </div>
+        </div> */}
         <section className="section">
           <div className="container">
             <div className="content">

@@ -83,6 +83,9 @@ $black: #2b2523
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
+  .name
+    font-size: 3em
+    color: rgb(241, 100, 47)
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -122,9 +125,36 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+.project-tile
+  min-height: 400px
+  background-color: rgb(75, 202, 255)
+  position: relative
+  overflow: hidden
+  border-radius: 5px
+
+
+.project-tile .header
+  padding: 20px
+  background-color: #000
+  h2, p
+    color: #fff
+  h2
+    margin-bottom: 10px
+  p
+    font-size: 1.3em
+
+.project-tile .bkg-img-container
+  object-fit: contain
+
+.fill-div
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: red
 
 @import "~bulma"
-
 
 // responsiveness
 +tablet-only

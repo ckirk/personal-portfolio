@@ -46,6 +46,7 @@ module.exports = {
               name: 'uploads',
             },
           },
+          // 'gatsby-plugin-image',
           {
             resolve: 'gatsby-remark-images',
             options: {

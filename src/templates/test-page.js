@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -16,6 +16,12 @@ export const TestPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <Link className="btn" to="/products">
+                Products
+              </Link>
+              <Link className="btn" to="/contact/examples">
+                Form Examples
+              </Link>
               <PageContent className="content" content={content} />
             </div>
           </div>

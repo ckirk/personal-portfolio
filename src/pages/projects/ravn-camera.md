@@ -4,7 +4,9 @@ title: RAVN Camera
 date: 2021-08-13T17:53:08.745Z
 description: Tactical Camera
 featuredpost: false
-featuredimage: /img/ravn_3.gif
+featuredimage: /img/ravn-cam.png
+tags:
+  - hardware
 ---
 Designed and developed functional hardware prototypes for use by the Navy SEALs to control head-mounted AR displays in the field. RAVN was accepted into Y Combinator (W19) with the use of these prototypes.
 

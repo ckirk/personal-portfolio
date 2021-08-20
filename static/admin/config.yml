@@ -62,7 +62,7 @@ collections:
     label_singular: "Project"
     folder: "src/pages/projects"
     create: true
-    slug: "{{fields.slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
       - {label: "Title", name: "title", widget: "string"}

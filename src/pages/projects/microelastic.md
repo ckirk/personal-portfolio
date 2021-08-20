@@ -1,7 +1,7 @@
 ---
 templateKey: project-page
 title: MicroElastic
-date: 2021-08-13T17:17:09.535Z
+date: 2021-08-20T20:27:34.975Z
 description: A medical application for measuring skin elasticity
 featuredpost: false
 featuredimage: /img/heatmap-sws-2.png
